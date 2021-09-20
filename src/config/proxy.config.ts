@@ -1,5 +1,3 @@
-require('dotenv-flow').config();
-
 export const proxyConfig = {
   pass: process.env.PROXY_PASS,
   port: process.env.PROXY_PORT,

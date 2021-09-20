@@ -40,3 +40,4 @@ lerna-debug.log*
 !test/data
 globalConfig.json
 .env.local
+.env.development

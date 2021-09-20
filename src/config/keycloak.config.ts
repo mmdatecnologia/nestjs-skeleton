@@ -1,5 +1,3 @@
-require('dotenv-flow').config();
-
 export const keycloakConfig = {
   clientURL: process.env.KEYCLOAK_CLIENT_URL,
   servicesAuthClientCredentials: process.env.KEYCLOAK_CLIENT_CREDENTIALS,
