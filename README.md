@@ -11,7 +11,7 @@
 - [🧪 Testes](#-testes)
 - [📋 Gerando arquivo de change log](#-gerando-arquivo-de-change-log)
 - [🏗️ Build](#️-build)
-- [Development](#development)
+- [✨ Development](#-development)
 
 # 💬 Sobre o Projeto
 
@@ -122,6 +122,6 @@ Build:
 npm run build
 ```
 
-# Development
+# ✨ Development
 
 🧑🏼‍💻 [Mateus Macedo Dos Anjos](mailto:macedodosanjosmateus@gmail.com)
