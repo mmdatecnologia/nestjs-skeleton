@@ -8,6 +8,7 @@
 * chore: update dependencies ([`d93f9a7`](https://github.com/mmdatecnologia/nestjs-skeleton/commit/d93f9a7e8973f09011b816f1d544a1012fb4a186))
 * chore: update dev tools config ([`4842e0a`](https://github.com/mmdatecnologia/nestjs-skeleton/commit/4842e0a0cdffe9c527bba3951cf3f29aea542e01))
 * chore: update dependencies ([`67db526`](https://github.com/mmdatecnologia/nestjs-skeleton/commit/67db526b83304c31752d996cd8f35f84885e1490))
+* chore: auto-changelog ([`7168b37`](https://github.com/mmdatecnologia/nestjs-skeleton/commit/7168b37cc41cbb50a75eac82e7fbe418ba4d3d22))
 * chore: update lint config ([`113b708`](https://github.com/mmdatecnologia/nestjs-skeleton/commit/113b70885e920849e372f11bfba99bbeb698d18f))
 * chore: update run commands ([`05404b9`](https://github.com/mmdatecnologia/nestjs-skeleton/commit/05404b9c4f2a47b6f5918dee7fb6fa0e527cc7c9))
 * chore: update version control ignore ([`ce13736`](https://github.com/mmdatecnologia/nestjs-skeleton/commit/ce137369195875f519fd4711c392c825c4b464aa))
