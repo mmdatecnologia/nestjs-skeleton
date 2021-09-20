@@ -31,5 +31,6 @@ module.exports = {
     '@typescript-eslint/no-namespace': 'off',
     '@typescript-eslint/no-floating-promises': 'off',
     'import/export': 'off',
+    '@typescript-eslint/no-var-requires': 'off',
   },
 };

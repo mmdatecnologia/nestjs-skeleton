@@ -39,3 +39,4 @@ lerna-debug.log*
 !src/data
 !test/data
 globalConfig.json
+.env.local
