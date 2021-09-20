@@ -11,10 +11,7 @@ const redisModuleConfig = {
   tls: true,
 };
 
-const cacheModule =
-  process.env.CACHE_ENV === 'TEST'
-    ? CacheModule.register()
-    : CacheModule.register(redisModuleConfig);
+const cacheModule = process.env.CACHE_ENV === 'TEST' ? CacheModule.register() : CacheModule.register(redisModuleConfig);
 @Module({
   exports: [CacheService],
   imports: [cacheModule],
