@@ -1,5 +1,3 @@
-require('dotenv-flow').config();
-
 export const apiConfig = {
   dataProvider: {
     apiKey: process.env.DATA_PROVIDER_API_KEY,

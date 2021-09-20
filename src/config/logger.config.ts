@@ -4,8 +4,6 @@ import { WinstonModuleOptions, utilities } from 'nest-winston';
 import { ElasticsearchTransport } from 'winston-elasticsearch';
 import * as apm from 'elastic-apm-node';
 
-require('dotenv-flow').config();
-
 apm.start({
   active: process.env.ELASTIC_APM_ACTIVE === 'true',
   captureBody: 'all',
@@ -18,6 +16,10 @@ apm.start({
   usePathAsTransactionName: process.env.ELASTIC_APM_USE_PATH_AS_TRANSACTION_NAME === 'true',
 });
 
+const consoleTransport: Transport = new winston.transports.Console({
+  format: winston.format.combine(winston.format.timestamp(), utilities.format.nestLike()),
+});
+
 const eSTransport: Transport = new ElasticsearchTransport({
   apm,
   clientOpts: {
@@ -26,13 +28,7 @@ const eSTransport: Transport = new ElasticsearchTransport({
   level: process.env.LOGGER_LEVEL || 'info',
 });
 
-const consoleTransport: Transport = new winston.transports.Console({
-  format: winston.format.combine(winston.format.timestamp(), utilities.format.nestLike()),
-});
-
-const transports = [consoleTransport, eSTransport];
-
 export const loggerConfig: WinstonModuleOptions = {
   level: process.env.LOGGER_LEVEL || 'info',
-  transports,
+  transports: [consoleTransport, eSTransport],
 };
